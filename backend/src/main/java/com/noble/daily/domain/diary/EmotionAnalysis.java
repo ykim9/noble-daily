@@ -16,19 +16,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class EmotionAnalysis {
     
-    @Column(name = "emotion_anger")
+    @Column(name = "emotion_anger", columnDefinition = "TINYINT")
     private Integer anger;      // 분노 (0-100)
     
-    @Column(name = "emotion_sadness")
+    @Column(name = "emotion_sadness", columnDefinition = "TINYINT")
     private Integer sadness;    // 우울 (0-100)
     
-    @Column(name = "emotion_joy")
+    @Column(name = "emotion_joy", columnDefinition = "TINYINT")
     private Integer joy;        // 기쁨 (0-100)
     
-    @Column(name = "emotion_anxiety")
+    @Column(name = "emotion_anxiety", columnDefinition = "TINYINT")
     private Integer anxiety;    // 불안 (0-100)
     
-    @Column(name = "emotion_fatigue")
+    @Column(name = "emotion_fatigue", columnDefinition = "TINYINT")
     private Integer fatigue;    // 피로 (0-100)
     
     @Column(name = "ai_comment", columnDefinition = "TEXT")
